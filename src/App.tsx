@@ -11,7 +11,7 @@ function App() {
 
 export default App;
 const AppStyled = styled.div`
-  background: url("../public/bg-cafe-lg.jpg") #111315 no-repeat;
+  background: url("./bg-cafe-lg.jpg") #111315 no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-start;
