@@ -19,11 +19,7 @@ export default function CoffeAvailableList({
             popular={coffee.popular}
             name={coffee.name}
             price={coffee.price}
-            icon={
-              coffee.votes === 0
-                ? "../../public/Star.svg"
-                : "../../public/Star_fill.svg"
-            }
+            icon={coffee.votes === 0 ? "/Star.svg" : "/Star_fill.svg"}
             rating={coffee.rating}
             votes={coffee.votes}
             image={coffee.image}
@@ -41,4 +37,8 @@ const CoffeAvailableStyled = styled.div`
   gap: 24px;
   justify-content: center;
   padding: 32px;
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(1, 300px);
+  }
 `;

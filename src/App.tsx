@@ -18,4 +18,13 @@ const AppStyled = styled.div`
   padding-top: 210px;
   height: 100vh;
   width: 100vw;
+
+  @media screen and (max-width: 1024px) {
+    background: url("./bg-cafe.jpg") #111315 no-repeat;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding-top: 90px;
+    background: url("./bg-cafe-sm.jpg") #111315 no-repeat;
+  }
 `;

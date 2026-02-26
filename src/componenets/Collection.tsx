@@ -49,9 +49,17 @@ const CollectionStyles = styled.div`
   background: #1b1d1f;
   max-width: 1500px;
   border-radius: 10px;
-  padding: 50px 0 70px;
+  padding: 70px 0 20px 0;
 
   .is-active {
     background: #1b1d1f;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 550px;
   }
 `;
